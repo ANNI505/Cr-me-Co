@@ -1,0 +1,46 @@
+@import url(pie.css);
+@import url(cabecera.css);
+@import url(menu.css);
+
+*{
+    /*margen*/
+    margin: 0;
+    /*margen interno*/
+    padding: 0;
+    /*tipo fuente */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    border: solid 1px rgb(138, 112, 56);
+    background-color: rgb(226, 85, 203);
+    padding: 10px;
+    margin: 15px;
+}
+
+/* ===== Colores por página ===== */
+
+.pagina-home {
+  background-color: #FFF8F0;
+  color: #4B3621;
+}
+
+.pagina-login {
+  background-color: #FDE8ED;
+  color: #6B3F4C;
+}
+
+.pagina-registro {
+  background-color: #FFFFFF;
+  color: #5C4033;
+}
+
+.pagina-checkout {
+  background-color: #FBE9E7;
+  color: #4B3621;
+}
+
+.pagina-confirmacion {
+  background-color: #F3E5DC;
+  color: #3E2723;
+}
