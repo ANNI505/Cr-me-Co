@@ -7,25 +7,37 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body class="pagina-checkout">
-  <header>Bienvenido a la pasteleria Crème & Co</header>
+  <header>
+    <p class="brand">Crème & Co</p>
+    <p class="tagline"></p>
+  </header>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="checkout.html">checkout</a></li>
-      <li><a href="confirmacion.html">confirmacion</a></li>
-      <li><a href="registro.html">registro</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li><a href="confirmacion.html">Confirmación</a></li>
+      <li><a href="registro.html">Registro</a></li>
       <li><a href="login.html">Login</a></li>
     </ul>
   </nav>
   <main>
-    <section>
+    <section class="form-card">
       <h1>Resumen de tu compra</h1>
-      <p>Producto: Torta de chocolate</p>
-      <p>Cantidad: 1</p>
-      <p>Total: $15.000</p>
-      <a href="confirmacion.html"><button>Confirmar compra</button></a>
+      <div class="resumen-item">
+        <span>Torta de chocolate</span>
+        <span>....</span>
+      </div>
+      <div class="resumen-total">
+        <span>Total</span>
+        <span>$</span>
+      </div>
+      <p class="form-footer-note">
+        <a href="confirmacion.html" class="btn btn-inverted">Confirmar compra</a>
+      </p>
     </section>
   </main>
-  <footer>Pasteleria Crème & Co</footer>
+  <footer>
+    Pastelería Crème & Co
+  </footer>
 </body>
 </html>

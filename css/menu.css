@@ -1,19 +1,29 @@
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin-left: 15px;
-    margin-top: 15px;
+nav {
+  padding-top: 1.5rem;
+}
 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
-nav ul li a{
-    /*quitar subrayado de link*/
-    text-decoration: none;
+
+nav ul li a {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  color: var(--color-tertiary);
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
-nav ul li a:hover{
-    background-color: pink;
-    padding: 15px;
-    font-size: 15px;
-    opacity: 0.5;
-    
+
+nav ul li a:hover,
+nav ul li a:focus-visible {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
 }
