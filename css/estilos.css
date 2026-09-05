@@ -35,7 +35,7 @@ body {
   background-color: var(--color-neutral);
 }
 
-h1, h3 {
+h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 600;
   color: var(--color-tertiary);
@@ -43,6 +43,7 @@ h1, h3 {
 }
 
 h1 { font-size: clamp(1.9rem, 4vw, 2.9rem); }
+h2 { font-size: clamp(1.3rem, 2.6vw, 1.7rem); text-align: center; }
 
 p { max-width: 65ch; }
 
@@ -130,15 +131,111 @@ input:focus {
   font-size: 0.92rem;
 }
 
-/* titulo grande  */
-.hero {
-  text-align: center;
-  padding: 1.5rem 1rem 3rem;
+/* hero de la home, en dos columnas como el Figma */
+.hero-split {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0 3rem;
+  text-align: left;
 }
-.hero .tagline {
-  font-size: 1.1rem;
+.hero-split .hero-text { flex: 1 1 320px; }
+.hero-split .eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--color-secondary);
-  margin: 0.75rem auto 0;
+  margin-bottom: 0.5rem;
+}
+.hero-split .tagline {
+  font-size: 1.05rem;
+  color: var(--color-ink);
+  margin: 1rem 0 1.5rem;
+}
+.hero-split .hero-image {
+  flex: 1 1 320px;
+  aspect-ratio: 4 / 3;
+}
+
+/* franja de "sellos de confianza" bajo el hero */
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0 0 3rem;
+}
+.feature-list li {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* encabezado de sección con "eyebrow" arriba del título */
+.section-title {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+.section-title .eyebrow {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 0.35rem;
+}
+
+/* grilla de tarjetas de producto */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.product-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(93, 64, 55, 0.12);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(93, 64, 55, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+.product-card .placeholder-img {
+  aspect-ratio: 1 / 1;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px dashed rgba(93, 64, 55, 0.25);
+}
+.product-card .product-info {
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+.product-card .price {
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+/* caja punteada reservada para las fotos que pondra el nico */
+.placeholder-img {
+  background-color: var(--color-neutral);
+  border: 2px dashed rgba(93, 64, 55, 0.3);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 /* el resumen de la compra */

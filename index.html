@@ -3,31 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crème & Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
+  <title>Crème & Co</title>
 </head>
 <body class="pagina-home">
-  <!--Cabecera-->
+  <!--Cabecera con logo y menu en la misma barra-->
   <header>
-    <p class="brand">Crème & Co</p>
-    <p class="tagline">Podriamos poner algo bonito, no se me ocurre que XD</p>
+    <div class="header-inner">
+      <div class="brand-group">
+        <span class="brand-logo" aria-hidden="true">C</span>
+        <p class="brand">Crème & Co</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="confirmacion.html">Confirmación</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <!--Barra de navegacion-->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="checkout.html">Checkout</a></li>
-      <li><a href="confirmacion.html">Confirmación</a></li>
-      <li><a href="registro.html">Registro</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
-  </nav>
   <!--Contenido de la pagina-->
   <main>
-    <section class="hero">
-      <h1>Prueba nuestros exclusivos pasteles</h1>
-      <p class="tagline">Aca igual XD</p>
-    </section>
+    <div class="hero-split">
+      <div class="hero-text">
+        <p class="eyebrow">Pastelería Artesanal</p>
+        <h1>Prueba nuestros exclusivos pasteles</h1>
+        <p class="tagline">En Crème & Co elaboramos cada pastel a mano, con ingredientes frescos y recetas tradicionales, para cada ocasión especial.</p>
+        <a href="checkout.html" class="btn btn-primary">Ver Catálogo</a>
+      </div>
+      <div class="hero-image placeholder-img" aria-hidden="true">
+        Imagen destacada<br>(pendiente)
+      </div>
+    </div>
+
+    <ul class="feature-list">
+      <li> Horneado fresco a diario</li>
+      <li> Ingredientes 100% naturales</li>
+      <li> Opciones personalizadas</li>
+      <li> Entrega a domicilio segura</li>
+    </ul>
+
+    <div class="section-title">
+      <span class="eyebrow">Nuestras recomendaciones</span>
+      <h2>Las Creaciones Destacadas de la Semana</h2>
+    </div>
+    <div class="card-grid">
+      <div class="product-card">
+        <div class="placeholder-img" aria-hidden="true">Imagen<br>(pendiente)</div>
+        <div class="product-info">
+          <h3>Pastel 1</h3>
+          <span class="price">...</span>
+          <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="placeholder-img" aria-hidden="true">Imagen<br>(pendiente)</div>
+        <div class="product-info">
+          <h3>Pastel 2</h3>
+          <span class="price">...</span>
+          <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="placeholder-img" aria-hidden="true">Imagen<br>(pendiente)</div>
+        <div class="product-info">
+          <h3>Pastel 3</h3>
+          <span class="price">...</span>
+          <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="placeholder-img" aria-hidden="true">Imagen<br>(pendiente)</div>
+        <div class="product-info">
+          <h3>Pastel 4</h3>
+          <span class="price">...</span>
+          <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+        </div>
+      </div>
+    </div>
   </main>
   <!--Pie de pagina-->
   <footer>
