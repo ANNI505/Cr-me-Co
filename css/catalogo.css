@@ -1,0 +1,115 @@
+/* Estilos de layout propios del catálogo (solo esta pagina) */
+.catalogo-hero {
+  text-align: center;
+  padding: 0.5rem 0 1.5rem;
+}
+.catalogo-hero .eyebrow {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 0.35rem;
+}
+.catalogo-hero .tagline {
+  margin: 0.75rem auto 0;
+}
+
+/* Carrusel de destacados */
+.carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar { display: none; }
+.carousel .product-card {
+  min-width: 260px;
+  max-width: 300px;
+  flex: 1 0 260px;
+  scroll-snap-align: start;
+}
+
+/* layout de dos columnas: filtros + grilla */
+.catalogo-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+@media (max-width: 820px) {
+  .catalogo-layout { grid-template-columns: 1fr; }
+}
+
+.filtros {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(93, 64, 55, 0.12);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(93, 64, 55, 0.06);
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.filtros h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-tertiary);
+  margin-bottom: 0.9rem;
+}
+.filtros ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+.filtros label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--color-ink);
+  cursor: pointer;
+}
+.filtros input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--color-secondary);
+}
+.filtros input[type="range"] {
+  width: 100%;
+  accent-color: var(--color-secondary);
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+.filtros input[type="range"]:focus { outline: none; }
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--color-secondary);
+  margin-top: 0.4rem;
+}
+
+/* etiquetas/badges sobre las tarjetas */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+}
+.badge-premium   { background-color: var(--color-primary); color: var(--color-tertiary); }
+.badge-temporada { background-color: #FFDBD0; color: var(--color-tertiary); }
+.badge-vendido   { background-color: #FFD9DF; color: var(--color-tertiary); }
+.badge-personalizable { background-color: var(--color-neutral); color: var(--color-secondary); }

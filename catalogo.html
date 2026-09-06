@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Catálogo - Crème & Co</title>
+</head>
+<body class="pagina-catalogo">
+  <!--Cabecera con logo y menu en la misma barra-->
+  <header>
+    <div class="header-inner">
+      <div class="brand-group">
+        <span class="brand-logo" aria-hidden="true">C</span>
+        <p class="brand">Crème & Co</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalogo.html" class="active">Catálogo</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="confirmacion.html">Confirmación</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Contenido de la pagina-->
+  <main>
+    <div class="catalogo-hero">
+      <span class="eyebrow">Pastelería Artesanal</span>
+      <h1>Nuestro Catálogo</h1>
+      <p class="tagline">Elige entre nuestras tortas, postres y opciones sin gluten, elaboradas a mano cada día.</p>
+    </div>
+
+    <!--Productos destacados (carrusel horizontal)-->
+    <div class="section-title">
+      <span class="eyebrow">Lo más pedido</span>
+      <h2>Productos Destacados</h2>
+    </div>
+    <div class="carousel">
+      <div class="product-card">
+        <span class="badge badge-premium">★ Premium</span>
+        <div class="placeholder-img" aria-hidden="true">aqui<br>(waren)</div>
+        <div class="product-info">
+          <h3>Torta Mega waren</h3>
+          <span class="price">$45.000</span>
+          <a href="#" class="btn btn-primary">Ver Detalles</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <span class="badge badge-temporada">Temporada</span>
+        <div class="placeholder-img" aria-hidden="true">aqui<br>(waren)</div>
+        <div class="product-info">
+          <h3>Tartaleta de minionl</h3>
+          <span class="price">$32.000</span>
+          <a href="#" class="btn btn-primary">Ver Detalles</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <span class="badge badge-vendido">Más vendido</span>
+        <div class="placeholder-img" aria-hidden="true">aqui<br>(waren)</div>
+        <div class="product-info">
+          <h3>pico pal que lee</h3>
+          <span class="price">$28.000</span>
+          <a href="#" class="btn btn-primary">Ver Detalles</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Filtros + grilla de productos-->
+    <div class="catalogo-layout">
+      <aside class="filtros">
+        <div>
+          <h3>Categorías</h3>
+          <ul>
+            <li><label><input type="checkbox" checked> Tortas</label></li>
+            <li><label><input type="checkbox"> Postres</label></li>
+            <li><label><input type="checkbox"> Sin Gluten</label></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Precio</h3>
+          <input type="range" min="0" max="100000" value="100000" aria-label="Precio máximo">
+          <div class="range-labels">
+            <span>$0</span>
+            <span>$100.000+</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="card-grid">
+        <div class="product-card">
+          <span class="badge badge-personalizable">Personalizable</span>
+          <div class="placeholder-img" aria-hidden="true">aqui<br>(waren)</div>
+          <div class="product-info">
+            <h3>Torta de Wen</h3>
+            <span class="price">$35.000</span>
+            <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="placeholder-img" aria-hidden="true">aqui<br>(waren)</div>
+          <div class="product-info">
+            <h3>Tartaleta de Frutas</h3>
+            <span class="price">$28.000</span>
+            <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="placeholder-img" aria-hidden="true">aqui<br>(waren)</div>
+          <div class="product-info">
+            <h3>Pancakes Sin Gluten</h3>
+            <span class="price">$22.000</span>
+            <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <span class="badge badge-temporada">Temporada</span>
+          <div class="placeholder-img" aria-hidden="true">Imagen<br>(pendiente)</div>
+          <div class="product-info">
+            <h3>Cheesecake de Frutos Rojos</h3>
+            <span class="price">$30.000</span>
+            <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <span class="badge badge-vendido">Más vendido</span>
+          <div class="placeholder-img" aria-hidden="true">Imagen<br>(pendiente)</div>
+          <div class="product-info">
+            <h3>Tres Leches Clásica</h3>
+            <span class="price">$32.000</span>
+            <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="placeholder-img" aria-hidden="true">Imagen<br>(pendiente)</div>
+          <div class="product-info">
+            <h3>Pastel de Zanahoria</h3>
+            <span class="price">$26.000</span>
+            <a href="checkout.html" class="btn btn-primary">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Pie de pagina-->
+  <footer>
+    Pastelería Crème & Co
+  </footer>
+</body>
+</html>
