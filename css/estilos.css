@@ -1,6 +1,7 @@
 @import url(pie.css);
 @import url(cabecera.css);
 @import url(menu.css);
+@import url(catalogo.css);
 
 :root {
   /* nuestra paleta de colores */
