@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Perfil - Crème & Co</title>
+</head>
+<body class="pagina-perfil">
+  <!--Cabecera con logo y menu en la misma barra-->
+  <header>
+    <div class="header-inner">
+      <div class="brand-group">
+        <span class="brand-logo" aria-hidden="true">C</span>
+        <p class="brand">Crème & Co</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="confirmacion.html">Confirmación</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="perfil.html" class="active">Mi Perfil</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Contenido de la pagina-->
+  <main>
+    <section class="perfil-hero">
+      <span class="eyebrow">Mi cuenta</span>
+      <h1>Mi Perfil</h1>
+      <p>Bienvenido de nuevo. Aquí puedes gestionar tus datos, preferencias y revisar tus dulces beneficios.</p>
+    </section>
+
+    <div class="perfil-grid">
+      <!--Columna izquierda: datos y preferencias-->
+      <div class="perfil-col">
+        <section>
+          <h2>Mis Datos</h2>
+          <div class="perfil-usuario">
+            <div class="perfil-avatar" aria-hidden="true">AG</div>
+            <div>
+              <p class="perfil-nombre">Ana García</p>
+              <p class="perfil-correo">ana.garcia@mail.com</p>
+            </div>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" value="+56 9 9153 2345">
+            </div>
+            <div class="form-group">
+              <label for="direccion">Dirección principal</label>
+              <input type="text" id="direccion" name="direccion" value="Estacion Venezuela 1234, Santiago, Chile">
+            </div>
+            <button type="button" class="btn btn-primary btn-block">Actualizar Datos</button>
+          </form>
+        </section>
+
+        <section>
+          <h2>Preferencias</h2>
+          <ul class="perfil-prefs">
+            <li><label><input type="checkbox" checked> Sin Gluten</label></li>
+            <li><label><input type="checkbox"> Vegano</label></li>
+            <li><label><input type="checkbox" checked> Amante del Chocolate Oscuro</label></li>
+          </ul>
+        </section>
+      </div>
+
+      <!--Columna derecha: beneficios, historial y recomendaciones-->
+      <div class="perfil-main">
+        <div class="beneficios-grid">
+          <div class="beneficio beneficio-premium">
+            <div>
+              <p class="beneficio-tag">Cliente Premium</p>
+              <p class="beneficio-descuento">10% OFF</p>
+              <p>Descuento activo de por vida en todos los pasteles artesanales.</p>
+            </div>
+          </div>
+          <div class="beneficio beneficio-promo">
+            <div>
+              <p class="beneficio-tag">Promo Especial</p>
+              <p class="beneficio-titulo">Día del Cumpleaños</p>
+              <p>Disfruta de un cupcake de cortesía en tu mes de cumpleaños.</p>
+            </div>
+            <span class="pill">Activo en Octubre</span>
+          </div>
+        </div>
+
+        <section>
+          <div class="perfil-seccion-cabecera">
+            <h2>Historial Reciente</h2>
+            <a class="perfil-ver-todos" href="#">Ver Todos</a>
+          </div>
+          <div class="pedido-row">
+            <div class="pedido-info">
+              <div class="placeholder-img pedido-thumb" aria-hidden="true">aquí<br>(waren)</div>
+              <div>
+                <p class="pedido-nombre">Tarta de Frambuesa y Chocolate</p>
+                <p class="pedido-detalle">Pedido #1042 • 12 Oct 2024</p>
+              </div>
+            </div>
+            <div class="pedido-importe">
+              <p class="pedido-precio">$85.000</p>
+              <span class="pedido-estado">Entregado</span>
+            </div>
+          </div>
+          <div class="pedido-row">
+            <div class="pedido-info">
+              <div class="placeholder-img pedido-thumb" aria-hidden="true">aquí<br>(waren)</div>
+              <div>
+                <p class="pedido-nombre">Caja de Macarons Variados (12 uds)</p>
+                <p class="pedido-detalle">Pedido #0985 • 28 Sep 2024</p>
+              </div>
+            </div>
+            <div class="pedido-importe">
+              <p class="pedido-precio">$42.000</p>
+              <span class="pedido-estado">Entregado</span>
+            </div>
+          </div>
+        </section>
+
+        <div>
+          <div class="perfil-seccion-cabecera">
+            <h2>Recomendaciones para ti</h2>
+          </div>
+          <div class="card-grid">
+            <div class="product-card">
+              <div class="placeholder-img" aria-hidden="true">aquí<br>(waren)</div>
+              <div class="product-info">
+                <h3>Pastel de Trufa Oscura</h3>
+                <p class="perfil-reco-nota">Basado en tus pedidos de chocolate.</p>
+                <span class="price">$38.000</span>
+                <a href="checkout.html" class="btn btn-primary btn-sm">Añadir al carrito</a>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="placeholder-img" aria-hidden="true">aquí<br>(waren)</div>
+              <div class="product-info">
+                <h3>Tartaleta de Frutos Rojos</h3>
+                <p class="perfil-reco-nota">Perfecta para acompañar tus meriendas.</p>
+                <span class="price">$26.500</span>
+                <a href="checkout.html" class="btn btn-primary btn-sm">Añadir al carrito</a>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="placeholder-img" aria-hidden="true">aquí<br>(waren)</div>
+              <div class="product-info">
+                <h3>Red Velvet Clásica</h3>
+                <p class="perfil-reco-nota">Un favorito que nunca falla.</p>
+                <span class="price">$45.000</span>
+                <a href="checkout.html" class="btn btn-primary btn-sm">Añadir al carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Pie de pagina-->
+  <footer>
+    Pastelería Crème & Co - by Nico(waren fan)
+  </footer>
+</body>
+</html>

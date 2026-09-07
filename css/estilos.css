@@ -2,6 +2,10 @@
 @import url(cabecera.css);
 @import url(menu.css);
 @import url(catalogo.css);
+@import url(perfil.css);
+@import url(seguimiento.css);
+@import url(carrito.css);
+@import url(producto.css);
 
 :root {
   /* nuestra paleta de colores */
@@ -267,7 +271,10 @@ input:focus {
 .pagina-login,
 .pagina-registro,
 .pagina-checkout,
-.pagina-confirmacion {
+.pagina-confirmacion,
+.pagina-perfil,
+.pagina-seguimiento,
+.pagina-carrito {
   background-color: var(--color-neutral);
   min-height: 100vh;
 }

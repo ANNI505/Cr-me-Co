@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <title>Tartaleta de Frutos Rojos - Crème & Co</title>
+</head>
+<body>
+  <!--Cabecera con logo y menu en la misma barra-->
+  <header>
+    <div class="header-inner">
+      <div class="brand-group">
+        <span class="brand-logo" aria-hidden="true">C</span>
+        <p class="brand">Crème & Co</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../catalogo.html" class="active">Catálogo</a></li>
+          <li><a href="../checkout.html">Checkout</a></li>
+          <li><a href="../confirmacion.html">Confirmación</a></li>
+          <li><a href="../perfil.html">Mi Perfil</a></li>
+          <li><a href="../carrito.html">Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Contenido de la pagina-->
+  <main>
+    <a class="producto-volver" href="../catalogo.html">← Volver al catálogo</a>
+
+    <section class="producto-detalle">
+      <div class="placeholder-img producto-imagen" aria-hidden="true">Imagen<br>(aquí waren)</div>
+      <div class="producto-info">
+        <span class="producto-eyebrow">Postres</span>
+        <h1>Tartaleta de Frutos Rojos</h1>
+        <p class="producto-precio">$28.000</p>
+        <p class="producto-descripcion">Base crujiente de masa quebrada con crema pastelera y frutos rojos frescos encima. Ligera, fresca y perfecta para acompañar el café.</p>
+
+        <div class="producto-ingredientes">
+          <h3>Ingredientes</h3>
+          <ul>
+            <li>Fresas</li>
+            <li>Arándanos</li>
+            <li>Crema pastelera</li>
+            <li>Masa quebrada</li>
+            <li>Mermelada de frutos rojos</li>
+          </ul>
+        </div>
+
+        <p class="producto-nota">Para 4 personas. Se recomienda consumir el mismo día.</p>
+
+        <div class="producto-comprar">
+          <form class="producto-cantidad">
+            <button type="button" aria-label="Quitar uno">−</button>
+            <input type="number" value="1" min="1" aria-label="Cantidad">
+            <button type="button" aria-label="Agregar uno">+</button>
+          </form>
+          <a href="../carrito.html" class="btn btn-primary">Añadir al carrito</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--Pie de pagina-->
+  <footer>
+    Pastelería Crème & Co
+  </footer>
+</body>
+</html>
