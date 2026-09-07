@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Carrito - Crème & Co</title>
+</head>
+<body class="pagina-carrito">
+  <!--Cabecera con logo y menu en la misma barra-->
+  <header>
+    <div class="header-inner">
+      <div class="brand-group">
+        <span class="brand-logo" aria-hidden="true">C</span>
+        <p class="brand">Crème & Co</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="confirmacion.html">Confirmación</a></li>
+          <li><a href="perfil.html">Mi Perfil</a></li>
+          <li><a href="carrito.html" class="active">Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Contenido de la pagina-->
+  <main>
+    <section class="carrito-hero">
+      <span class="eyebrow">Tu selección</span>
+      <h1>Carrito de Compras</h1>
+      <p>Revisa tus dulces antes de pasar al pago.</p>
+    </section>
+
+    <div class="carrito-grid">
+      <!--Columna principal: lista de productos-->
+      <div class="carrito-principal">
+        <section>
+          <h2>Tus productos (3)</h2>
+          <div class="carrito-item">
+            <div class="placeholder-img carrito-thumb" aria-hidden="true">aquí<br>(waren)</div>
+            <div class="carrito-info">
+              <p class="carrito-nombre">Torta de Chocolate Clásica</p>
+              <p class="carrito-detalle">Tamaño mediano • 8 porciones</p>
+              <p class="carrito-precio-unitario">$38.000 c/u</p>
+            </div>
+            <form class="carrito-cantidad">
+              <button type="button" aria-label="Quitar uno">−</button>
+              <input type="number" value="1" min="1" aria-label="Cantidad">
+              <button type="button" aria-label="Agregar uno">+</button>
+            </form>
+            <p class="carrito-subtotal-linea">$38.000</p>
+            <a class="carrito-eliminar" href="#">Eliminar</a>
+          </div>
+
+          <div class="carrito-item">
+            <div class="placeholder-img carrito-thumb" aria-hidden="true">aquí<br>(waren)</div>
+            <div class="carrito-info">
+              <p class="carrito-nombre">Cheesecake de Frutos Rojos</p>
+              <p class="carrito-detalle">Base de galleta • 6 porciones</p>
+              <p class="carrito-precio-unitario">$30.000 c/u</p>
+            </div>
+            <form class="carrito-cantidad">
+              <button type="button" aria-label="Quitar uno">−</button>
+              <input type="number" value="2" min="1" aria-label="Cantidad">
+              <button type="button" aria-label="Agregar uno">+</button>
+            </form>
+            <p class="carrito-subtotal-linea">$60.000</p>
+            <a class="carrito-eliminar" href="#">Eliminar</a>
+          </div>
+
+          <div class="carrito-item">
+            <div class="placeholder-img carrito-thumb" aria-hidden="true">aquí<br>(waren)</div>
+            <div class="carrito-info">
+              <p class="carrito-nombre">Caja de Macarons Variados (12 uds)</p>
+              <p class="carrito-detalle">Surtido de 6 sabores</p>
+              <p class="carrito-precio-unitario">$42.000 c/u</p>
+            </div>
+            <form class="carrito-cantidad">
+              <button type="button" aria-label="Quitar uno">−</button>
+              <input type="number" value="1" min="1" aria-label="Cantidad">
+              <button type="button" aria-label="Agregar uno">+</button>
+            </form>
+            <p class="carrito-subtotal-linea">$42.000</p>
+            <a class="carrito-eliminar" href="#">Eliminar</a>
+          </div>
+        </section>
+      </div>
+
+      <!--Columna lateral: resumen del pedido-->
+      <aside class="carrito-lateral">
+        <section>
+          <h2>Resumen</h2>
+          <form class="carrito-cupon">
+            <input type="text" placeholder="Código de descuento" aria-label="Código de descuento">
+            <button type="submit" class="btn btn-primary">Aplicar</button>
+          </form>
+          <div class="carrito-totales">
+            <span>Subtotal</span>
+            <span class="valor">$140.000</span>
+          </div>
+          <div class="carrito-totales">
+            <span>Envío a domicilio</span>
+            <span class="valor">$8.000</span>
+          </div>
+          <div class="carrito-total">
+            <span>Total</span>
+            <span>$148.000</span>
+          </div>
+          <div class="carrito-acciones">
+            <a href="checkout.html" class="btn btn-primary">Proceder al pago</a>
+            <a class="carrito-seguir" href="catalogo.html">← Seguir comprando</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <!--Pie de pagina-->
+  <footer>
+    Pastelería Crème & Co - by Nico(waren fan)  
+  </footer>
+</body>
+</html>

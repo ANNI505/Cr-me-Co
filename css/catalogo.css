@@ -1,4 +1,4 @@
-/* Estilos de layout propios del catálogo (solo esta pagina) */
+/* Estilos de layout propios del catalogo (solo esta pagina) */
 .catalogo-hero {
   text-align: center;
   padding: 0.5rem 0 1.5rem;
@@ -96,7 +96,7 @@
   margin-top: 0.4rem;
 }
 
-/* etiquetas/badges sobre las tarjetas */
+/* etiquetas sobre las tarjetas */
 .badge {
   display: inline-flex;
   align-items: center;

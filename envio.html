@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Seguimiento de Pedido - Crème & Co</title>
+</head>
+<body class="pagina-seguimiento">
+  <!--Cabecera con logo y menu en la misma barra-->
+  <header>
+    <div class="header-inner">
+      <div class="brand-group">
+        <span class="brand-logo" aria-hidden="true">C</span>
+        <p class="brand">Crème & Co</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="confirmacion.html">Confirmación</a></li>
+          <li><a href="perfil.html">Mi Perfil</a></li>
+          <li><a href="envio.html" class="active">Seguimiento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Contenido de la pagina-->
+  <main>
+    <section class="seguimiento-hero">
+      <a class="seguimiento-volver" href="perfil.html">← Volver a mis pedidos</a>
+      <h1>Seguimiento de Pedido #67</h1>
+      <p>Tu momento dulce está en camino. Entrega estimada: <strong>15 de Noviembre, 14:00 - 16:00</strong></p>
+    </section>
+
+    <div class="seguimiento-grid">
+      <!--Columna principal: estado del pedido y ruta de entrega-->
+      <div class="seguimiento-principal">
+        <section class="seguimiento-card">
+          <h2>Estado del Pedido</h2>
+          <div class="stepper">
+            <div class="stepper-paso is-done">
+              <span class="stepper-circulo" aria-hidden="true">✓</span>
+              <div>
+                <p class="stepper-titulo">Pedido Recibido</p>
+                <p class="stepper-nota">09:30 AM</p>
+              </div>
+            </div>
+            <div class="stepper-paso is-current">
+              <span class="stepper-circulo" aria-hidden="true">2</span>
+              <div>
+                <p class="stepper-titulo">En Preparación</p>
+                <p class="stepper-nota">Amasando con amor</p>
+              </div>
+            </div>
+            <div class="stepper-paso">
+              <span class="stepper-circulo" aria-hidden="true">3</span>
+              <div>
+                <p class="stepper-titulo">Listo para Despacho</p>
+                <p class="stepper-nota">Pendiente</p>
+              </div>
+            </div>
+            <div class="stepper-paso">
+              <span class="stepper-circulo" aria-hidden="true">4</span>
+              <div>
+                <p class="stepper-titulo">En Camino</p>
+                <p class="stepper-nota">Pendiente</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="seguimiento-card">
+          <h2>Ruta de Entrega</h2>
+          <div class="placeholder-img mapa-placeholder" aria-hidden="true">Mapa de la ruta<br>(aquí waren)</div>
+        </section>
+      </div>
+
+      <!--Columna lateral: resumen del pedido-->
+      <aside class="seguimiento-lateral">
+        <section class="seguimiento-card">
+          <h2>Resumen del Pedido</h2>
+          <div class="resumen-productos">
+            <div class="resumen-producto">
+              <div class="placeholder-img resumen-thumb" aria-hidden="true">aquí<br>(waren)</div>
+              <div class="resumen-nombre">
+                <p>Tarta de Fresa Artesanal</p>
+                <p>Porción individual</p>
+              </div>
+              <span class="resumen-cantidad">x1</span>
+            </div>
+            <div class="resumen-producto">
+              <div class="placeholder-img resumen-thumb" aria-hidden="true">aquí<br>(waren)</div>
+              <div class="resumen-nombre">
+                <p>Croissant Clásico</p>
+                <p>Caja de 3</p>
+              </div>
+              <span class="resumen-cantidad">x1</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline">Ver Factura</a>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <!--Pie de pagina-->
+  <footer>
+    Pastelería Crème & Co - by Nico(waren fan)
+  </footer>
+</body>
+</html>
