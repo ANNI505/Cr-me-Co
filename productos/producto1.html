@@ -21,10 +21,9 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../catalogo.html" class="active">Catálogo</a></li>
-          <li><a href="../checkout.html">Checkout</a></li>
-          <li><a href="../confirmacion.html">Confirmación</a></li>
-          <li><a href="../perfil.html">Mi Perfil</a></li>
           <li><a href="../carrito.html">Carrito</a></li>
+          <li><a href="../perfil.html">Mi Perfil</a></li>
+          <li><a href="../envio.html">Seguimiento de envío</a></li>
         </ul>
       </nav>
     </div>
@@ -34,7 +33,7 @@
     <a class="producto-volver" href="../catalogo.html">← Volver al catálogo</a>
 
     <section class="producto-detalle">
-      <div class="placeholder-img producto-imagen" aria-hidden="true">Imagen<br>(aquí waren)</div>
+      <div class="placeholder-img foto producto-imagen"><img src="../imagen/chocolate.jpg" alt="Torta de Chocolate Clásica"></div>
       <div class="producto-info">
         <span class="producto-eyebrow">Tortas</span>
         <h1>Torta de Chocolate Clásica</h1>
@@ -54,20 +53,21 @@
 
         <p class="producto-nota">Tamaño mediano • 8 porciones. Personalizable con mensaje. Puede contener frutos secos.</p>
 
-        <div class="producto-comprar">
-          <form class="producto-cantidad">
+        <form class="producto-comprar" action="../carrito.html" method="get">
+          <label for="cantidad" class="sr-only">Cantidad</label>
+          <div class="producto-cantidad">
             <button type="button" aria-label="Quitar uno">−</button>
-            <input type="number" value="1" min="1" aria-label="Cantidad">
+            <input type="number" id="cantidad" name="cantidad" value="1" min="1" aria-label="Cantidad">
             <button type="button" aria-label="Agregar uno">+</button>
-          </form>
-          <a href="../carrito.html" class="btn btn-primary">Añadir al carrito</a>
-        </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Añadir al carrito</button>
+        </form>
       </div>
     </section>
   </main>
   <!--Pie de pagina-->
   <footer>
-    Pastelería Crème & Co
+    Pastelería Crème & Co - by nico (waren fan)
   </footer>
 </body>
 </html>

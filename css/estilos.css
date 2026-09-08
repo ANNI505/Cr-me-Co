@@ -6,6 +6,7 @@
 @import url(seguimiento.css);
 @import url(carrito.css);
 @import url(producto.css);
+@import url(imagenes.css);
 
 :root {
   /* nuestra paleta de colores */
@@ -125,10 +126,36 @@ input {
   background-color: var(--color-neutral);
   color: var(--color-ink);
 }
+textarea {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(93, 64, 55, 0.3);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background-color: var(--color-neutral);
+  color: var(--color-ink);
+  resize: vertical;
+}
 input:focus {
   outline: 2px solid var(--color-primary);
   outline-offset: 1px;
   border-color: var(--color-secondary);
+}
+textarea:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+  border-color: var(--color-secondary);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 .form-footer-note {
   text-align: center;
