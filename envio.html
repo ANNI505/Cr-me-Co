@@ -21,10 +21,9 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="catalogo.html">Catálogo</a></li>
-          <li><a href="checkout.html">Checkout</a></li>
-          <li><a href="confirmacion.html">Confirmación</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
           <li><a href="perfil.html">Mi Perfil</a></li>
-          <li><a href="envio.html" class="active">Seguimiento</a></li>
+          <li><a href="envio.html" class="active">Seguimiento de envío</a></li>
         </ul>
       </nav>
     </div>
@@ -76,7 +75,7 @@
 
         <section class="seguimiento-card">
           <h2>Ruta de Entrega</h2>
-          <div class="placeholder-img mapa-placeholder" aria-hidden="true">Mapa de la ruta<br>(aquí waren)</div>
+          <div class="placeholder-img foto mapa-placeholder"><img src="imagen/mapa.jpg" alt="Mapa de la ruta de entrega"></div>
         </section>
       </div>
 
@@ -86,18 +85,18 @@
           <h2>Resumen del Pedido</h2>
           <div class="resumen-productos">
             <div class="resumen-producto">
-              <div class="placeholder-img resumen-thumb" aria-hidden="true">aquí<br>(waren)</div>
+              <div class="placeholder-img foto resumen-thumb"><img src="imagen/tartaleta.jpg" alt="Tartaleta de Frutos Rojos"></div>
               <div class="resumen-nombre">
-                <p>Tarta de Fresa Artesanal</p>
+                <p>Tartaleta de Frutos Rojos</p>
                 <p>Porción individual</p>
               </div>
               <span class="resumen-cantidad">x1</span>
             </div>
             <div class="resumen-producto">
-              <div class="placeholder-img resumen-thumb" aria-hidden="true">aquí<br>(waren)</div>
+              <div class="placeholder-img foto resumen-thumb"><img src="imagen/chocolate.jpg" alt="Torta de Chocolate clásica"></div>
               <div class="resumen-nombre">
-                <p>Croissant Clásico</p>
-                <p>Caja de 3</p>
+                <p>Torta de Chocolate clasica</p>
+                <p>Porción individual</p>
               </div>
               <span class="resumen-cantidad">x1</span>
             </div>
@@ -106,6 +105,26 @@
         </section>
       </aside>
     </div>
+
+    <section class="seguimiento-card contacto-card">
+      <h2>Contacto y Soporte</h2>
+      <p>¿Problemas con tu pedido o con el envío? Escríbenos y te ayudaremos.</p>
+      <form action="#" method="post" class="contacto-form">
+        <div class="form-group">
+          <label for="contacto-nombre">Nombre</label>
+          <input type="text" id="contacto-nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="contacto-email">Correo</label>
+          <input type="email" id="contacto-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="contacto-mensaje">Mensaje</label>
+          <textarea id="contacto-mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar consulta</button>
+      </form>
+    </section>
   </main>
   <!--Pie de pagina-->
   <footer>
